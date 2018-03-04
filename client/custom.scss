@@ -1,0 +1,72 @@
+body {
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+.active {
+    background: #0d7680;
+}
+
+
+.o-hierarchical-nav {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+#section1 {
+    margin-top: 2.5em;
+}
+
+#section1, #section2, #section3 {
+    margin-bottom: 2em;
+}
+
+.o-typography-topic {
+    color: #990f3d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.o-typography-author a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #33302e;
+}
+
+.o-typography-link {
+    color: #0d7680;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 2px solid #cfd8d1;
+}
+
+.parallax {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fim.ft-static.com%2Fcontent%2Fimages%2Fa60ae24b-b87f-439c-bf1b-6e54946b4cf2.img?source=otype");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100vw;
+}
+
+.o-gallery__item__content img {
+    height: 300px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Media Query
+
+@media only screen and (min-width: 490px) {
+    .parallax {
+        height: 100vh;
+    }
+
+    .o-gallery__item__content img {
+        height: 500px;
+    }
+}
